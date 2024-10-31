@@ -1,12 +1,20 @@
-import { Stack } from "expo-router";
+import { Tabs } from "expo-router";
 
 export default function Laytout() {
   return (
-    <Stack>
-      <Stack.Screen
+    <Tabs>
+      <Tabs.Screen
         name="index"
         options={{ title: "Shopping List" }}
       />
-    </Stack>
+      <Tabs.Screen
+        name="counter"
+        options={{ title: "Counter" }}
+      />
+      <Tabs.Screen
+        name="idea"
+        options={{ title: "Idea" }}
+      />
+    </Tabs>
   );
 }
