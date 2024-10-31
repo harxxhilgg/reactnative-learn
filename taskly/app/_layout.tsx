@@ -20,6 +20,7 @@ export default function Laytout() {
         name="counter"
         options={{
           title: "Counter",
+          headerShown: false,
           tabBarIcon: ({ color, size }) => {
             return <Feather name="clock" size={size} color={color} />
           }
